@@ -1,4 +1,4 @@
-# heatmap_SVG
+# heatmap.SVG
 
 Color SVG and make heatmap on SVG
 ---------------------------------
