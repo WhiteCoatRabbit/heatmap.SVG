@@ -1,10 +1,10 @@
 # heatmap_SVG
 
 Color SVG and make heatmap on SVG
-==================================
+---------------------------------
 Hi! I developed this package for recolor SVG file and drawing heatmap with desired shape, such as anatomy or geographical map.
 It's somewhat incomplete now, please understand (it's my first time to develop R package...!)
-I'll add more informations in a few weeks.
+I'll add better instructions in a few weeks.
 
 Last updated: 2025.02.09.
 
