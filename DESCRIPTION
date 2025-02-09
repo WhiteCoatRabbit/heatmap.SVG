@@ -1,4 +1,4 @@
-Package: heatmap_SVG
+Package: heatmap.SVG
 Title: A package for coloring SVG and make heatmap with desired SVG
 Version: 0.1.0
 Authors@R: 
