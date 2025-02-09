@@ -1,36 +1,29 @@
 # heatmap_SVG
 
 Color SVG and make heatmap on SVG
-
+==================================
 Hi! I developed this package for recolor SVG file and drawing heatmap with desired shape, such as anatomy or geographical map.
-
 It's somewhat incomplete now, please understand (it's my first time to develop R package...!)
-
 I'll add more informations in a few weeks.
 
 Last updated: 2025.02.09.
 
 1) Before you start
-
+   ----------------------------------
     You should make objects into path using Inkscape (Inkscape is free program dealing with SVG files).
-
     I recommend changing the id of path so you can distinguish. (ex. stomach, small instestine, ... is better than path1, path2, ...)
-
     Be aware of path label; label is not the id of path.
 
-3) Main functions
-
+2) Main functions
+   ----------------------------------
     `read_n_check()`: Read svg file and on displays it as a raster plot for checking.
-
     `find_path_id()`: Find ids of path in an SVG file. If it returns nothing, you should go to Inkscape and check.
-
     `recolorSVG()`: If you want specific color to specific path, you can use this function.
-
     `mapping_path_id()`: If you have data with values, do match process for heatmap.
-
     `heatmapSVG()`: Draw heatmap using your data.
 
-5) For example,
+3) For example,
+   ----------------------------------
 
     ```R
     original_file <- read_n_check("path/to/your/file.svg")
@@ -41,10 +34,8 @@ Last updated: 2025.02.09.
                check_path_id,
                color_factor=c("red","yellow","green","#450023"), #first path in check_path_id will be red, second yellow, ...
                save_as = "path/to/your/modified_file.svg")
-
-    #or if you don't want to save, save_as=NULL and default is NULL.
-
-    #if you want data in R, write as 'modified_file <- recolorSVG(~~)'
+            #or if you don't want to save, save_as=NULL and default is NULL.
+            #if you want data in R, write as 'modified_file <- recolorSVG(~~)'
 
     data_add_id <- mapping_path_id(data,
                                check_path_id,
@@ -61,5 +52,5 @@ Last updated: 2025.02.09.
              size = NULL, #eg. size=c(0.01, 0.33) will gain colorbar with 0.01×width and 0.33×height size.
              label_num = 5, #How many numbers do you want to show next to the colorbar.
              save_as = "heatmap in anatomy.svg" )
-    #if you want data in R, write as heated_file <- heatmapSVG(~~)
+        #if you want data in R, write as heated_file <- heatmapSVG(~~)
     ```
