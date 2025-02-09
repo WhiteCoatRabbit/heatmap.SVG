@@ -1,0 +1,11 @@
+importFrom("grid", "grid.newpage", "grid.draw", "rasterGrob")
+importFrom("rsvg", "rsvg")
+importFrom("stringr", "str_replace")
+importFrom("xml2", "read_xml", "xml_children", "xml_name", "xml_attr", "xml_set_attr", "xml_add_child", "write_xml")
+importFrom("grDevices", "colorRampPalette")
+
+export(find_path_id)
+export(heatmapSVG)
+export(mapping_path_id)
+export(read_n_check)
+export(recolorSVG)
