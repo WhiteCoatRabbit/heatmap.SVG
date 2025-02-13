@@ -9,9 +9,9 @@ Hi! I developed this package for draw heatmap with desired shape, such as anatom
 
 1) Before you start
    ----------------------------------
-    You should make objects into path using Inkscape (Inkscape is free program dealing with SVG files).
-    I recommend changing the id of path so you can distinguish. (ex. stomach, small instestine, ... is better than path1, path2, ...)
-    Be aware of path label; label is not the id of path.
+    You should make objects into path using Inkscape (Inkscape is free program dealing with SVG files).      
+    I recommend changing the id of path so you can distinguish. (ex. stomach, small instestine, ... is better than path1, path2, ...)        
+    Be aware of path label; label is not the id of path.        
 
 2) Main functions
    ----------------------------------
