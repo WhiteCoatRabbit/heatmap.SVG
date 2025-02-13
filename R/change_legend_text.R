@@ -10,8 +10,11 @@
 #' @export
 change_legend_text <- function(svg_xml, orig_text, change_text, text_color, save_as=NULL) {
 
-  if (length(orig_text) != length(change_text) || length(orig_text) != length(text_color)) { # text_color 길이 확인 추가
-    warning("The length of 'orig_text', 'change_text', and 'text_color' must be the same.")
+  if(is.null(change_text)){
+    change_text <- orig_text
+  }
+  else if (length(orig_text) != length(change_text)) {
+    warning("The length of 'orig_text', 'change_text' must be the same.")
     return(invisible(NULL))
   }
 
