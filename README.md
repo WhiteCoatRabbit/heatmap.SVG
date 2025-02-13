@@ -1,6 +1,6 @@
 # heatmap.SVG
 
-Color SVG and make heatmap on SVG
+Make heatmap with desired shape!
 ---------------------------------
 Last updated: 2025.02.13.
 
