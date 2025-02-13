@@ -1,6 +1,6 @@
-Package: heatmap_SVG
+Package: heatmap.SVG
 Title: A package for coloring SVG and make heatmap with desired SVG
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: 
     person("YouJin", "Kim", ,"youjinkim@daum.net", role = c("aut", "cre"))
 Description: This package provides functions to modify SVG files. The main functions are 1) painting SVG with desired color 2) make heatmap in the SVG file with gradient remarks.
