@@ -136,7 +136,7 @@ heatmapSVG <- function(data_mapped, svg_xml, data_col, id_col="matched_path_id",
    xml_add_child(mod_svg_xml, rect)
 
    # Add labels
-   label_values <- seq(from = range[1], to = range[2], length.out = label_num)
+   label_values <- seq(from = range[1], to = range[2], by = (range[2]-range[1])/label_num )
    label_positions <- seq(from = rect_y + rect_h, to = rect_y, length.out = label_num)
 
    for (i in seq_along(label_values)) {
