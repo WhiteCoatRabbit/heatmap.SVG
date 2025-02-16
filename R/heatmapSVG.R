@@ -212,7 +212,7 @@ heatmapSVG <- function(data_mapped, svg_xml, data_col, id_col="matched_path_id",
    }
 
    # add legend
-   defs <- xml_find_first(mod_svg_xml, "//defs")
+   defs <- top_level_nodes[xml_name(top_level_nodes) == "defs"]
 
    #for vertical
    if (direction == "vertical") {
