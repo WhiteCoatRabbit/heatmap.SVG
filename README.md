@@ -4,7 +4,7 @@ Make heatmap with desired shape!
 ---------------------------------
 Last updated: 2025.02.13.
 
-Hi! I developed this package for draw heatmap with desired shape, such as anatomy or geographical map, and recolor SVG file.
+Hi! I developed this package for draw heatmap with custom shape, such as anatomy or geographical map, and recolor SVG file.
 ![Graphical abstract of this package](https://github.com/WhiteCoatRabbit/heatmap.SVG/blob/master/inst/extdata/heatmapSVG_graphical_abstract.png)
 
 1) Before you start
@@ -115,4 +115,5 @@ recolor_smallparts <- recolorSVG(
 ```
 4) For people who need detailed explanation,
    ----------------------------------
-   I'll planning to write detailed tutorial in my blog, so please wait! Thank you.
+   I wrote detailed tutorial in my blog! [Miretia]([https://miretia.tistory.com/755])
+   Thank you.
