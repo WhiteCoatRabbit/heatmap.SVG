@@ -115,5 +115,5 @@ recolor_smallparts <- recolorSVG(
 ```
 4) For people who need detailed explanation,
    ----------------------------------
-   I wrote detailed tutorial in my blog! [Miretia]([https://miretia.tistory.com/755])
+   I wrote detailed tutorial in [my blog](https://miretia.tistory.com/755)!
    Thank you.
