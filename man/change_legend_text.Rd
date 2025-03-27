@@ -8,7 +8,7 @@ change_legend_text(
   svg_xml,
   orig_text,
   change_text = NULL,
-  text_color = NULL,
+  text_color = "black",
   save_as = NULL
 )
 }
