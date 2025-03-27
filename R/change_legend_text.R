@@ -32,7 +32,7 @@ change_legend_text <- function(svg_xml, orig_text, change_text=NULL, text_color=
 
       if (node_text == orig) {
         xml_text(node) <- change
-        if (!is.null(text_color)){
+        if (!is.null(color)){
           xml_set_attr(node, "fill", color)
         }
       }
