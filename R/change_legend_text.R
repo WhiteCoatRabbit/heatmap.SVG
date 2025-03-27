@@ -8,7 +8,7 @@
 #' @param save_as A file path to save the modified SVG. Default is NULL.
 #' @return Changed SVG file.
 #' @export
-change_legend_text <- function(svg_xml, orig_text, change_text, text_color, save_as=NULL) {
+change_legend_text <- function(svg_xml, orig_text, change_text=NULL, text_color=NULL, save_as=NULL) {
 
   if(is.null(change_text)){
     change_text <- orig_text
@@ -32,7 +32,9 @@ change_legend_text <- function(svg_xml, orig_text, change_text, text_color, save
 
       if (node_text == orig) {
         xml_text(node) <- change
-        xml_set_attr(node, "fill", color)
+        if (!is.null(text_color)){
+          xml_set_attr(node, "fill", color)
+        }
       }
     }
   }, orig_text, change_text, text_color)

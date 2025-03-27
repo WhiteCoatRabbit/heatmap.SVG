@@ -4,7 +4,13 @@
 \alias{change_legend_text}
 \title{change_legend_text()}
 \usage{
-change_legend_text(svg_xml, orig_text, change_text, text_color, save_as = NULL)
+change_legend_text(
+  svg_xml,
+  orig_text,
+  change_text = NULL,
+  text_color = NULL,
+  save_as = NULL
+)
 }
 \arguments{
 \item{svg_xml}{Your XML document with legend.}
